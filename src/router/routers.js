@@ -1,6 +1,5 @@
 import Main from '@/components/main'
 import parentView from '@/components/parent-view'
-import router from '../router'
 
 /**
  * iview-admin中meta除了原生参数外可配置的参数:
@@ -526,6 +525,51 @@ export default [
           title: 'topic4'
         },
         component: () => import('@/view/leetcode/topic4.vue')
+      },
+      {
+        path: 'topic6',
+        name: 'topic6',
+        meta: {
+          notCache: true,
+          title: 'topic6'
+        },
+        component: () => import('@/view/leetcode/topic6.vue')
+      },
+      {
+        path: 'topic7',
+        name: 'topic7',
+        meta: {
+          notCache: true,
+          title: 'topic7'
+        },
+        component: () => import('@/view/leetcode/topic7.vue')
+      },
+      {
+        path: 'topic8',
+        name: 'topic8',
+        meta: {
+          notCache: true,
+          title: 'topic8'
+        },
+        component: () => import('@/view/leetcode/topic8.vue')
+      },
+      {
+        path: 'topic10',
+        name: 'topic10',
+        meta: {
+          notCache: true,
+          title: 'topic10'
+        },
+        component: () => import('@/view/leetcode/topic10.vue')
+      },
+      {
+        path: 'topic11',
+        name: 'topic11',
+        meta: {
+          notCache: true,
+          title: 'topic11'
+        },
+        component: () => import('@/view/leetcode/topic11.vue')
       }
     ]
   },
