@@ -12,7 +12,7 @@ const router = new Router({
   routes,
   mode: 'history'
 })
-const LOGIN_PAGE_NAME = 'login'
+const LOGIN_PAGE_NAME = 'home'
 
 const turnTo = (to, access, next) => {
   next()
@@ -20,7 +20,7 @@ const turnTo = (to, access, next) => {
   // else next({ replace: true, name: 'error_401' }) // 无权限，重定向到401页面
 }
 
-router.beforeEach((to, from, next) => {
+/* router.beforeEach((to, from, next) => {
   iView.LoadingBar.start()
   const token = getToken()
   if (!token && to.name !== LOGIN_PAGE_NAME) {
@@ -51,7 +51,7 @@ router.beforeEach((to, from, next) => {
       })
     }
   }
-})
+}) */
 
 router.afterEach(to => {
   setTitle(to, router.app)
