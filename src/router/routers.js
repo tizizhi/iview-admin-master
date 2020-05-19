@@ -483,6 +483,25 @@ export default [
     ]
   },
   {
+    path: '/markDown',
+    name: '随笔笔记',
+    component: Main,
+    meta: {
+      hideInBread: false
+    },
+    children: [
+      {
+        path: '/mark',
+        name: 'mark',
+        meta: {
+          icon: 'md-cloud-upload',
+          title: '随笔笔记'
+        },
+        component: () => import('@/view/mark/mark.vue')
+      }
+    ]
+  },
+  {
     path: '/topic',
     name: 'topic',
     meta: {
